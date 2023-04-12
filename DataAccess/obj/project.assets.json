@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/damlaakcin/Desktop/sandbox/karbil-api/Karbil/DataAccess/DataAccess.csproj",
+      "projectUniqueName": "/Users/damlaakcin/Desktop/sandbox/Karbil/DataAccess/DataAccess.csproj",
       "projectName": "DataAccess",
-      "projectPath": "/Users/damlaakcin/Desktop/sandbox/karbil-api/Karbil/DataAccess/DataAccess.csproj",
+      "projectPath": "/Users/damlaakcin/Desktop/sandbox/Karbil/DataAccess/DataAccess.csproj",
       "packagesPath": "/Users/damlaakcin/.nuget/packages/",
-      "outputPath": "/Users/damlaakcin/Desktop/sandbox/karbil-api/Karbil/DataAccess/obj/",
+      "outputPath": "/Users/damlaakcin/Desktop/sandbox/Karbil/DataAccess/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/damlaakcin/.nuget/NuGet/NuGet.Config"

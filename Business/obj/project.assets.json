@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/damlaakcin/Desktop/sandbox/karbil-api/Karbil/Business/Business.csproj",
+      "projectUniqueName": "/Users/damlaakcin/Desktop/sandbox/Karbil/Business/Business.csproj",
       "projectName": "Business",
-      "projectPath": "/Users/damlaakcin/Desktop/sandbox/karbil-api/Karbil/Business/Business.csproj",
+      "projectPath": "/Users/damlaakcin/Desktop/sandbox/Karbil/Business/Business.csproj",
       "packagesPath": "/Users/damlaakcin/.nuget/packages/",
-      "outputPath": "/Users/damlaakcin/Desktop/sandbox/karbil-api/Karbil/Business/obj/",
+      "outputPath": "/Users/damlaakcin/Desktop/sandbox/Karbil/Business/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/damlaakcin/.nuget/NuGet/NuGet.Config"

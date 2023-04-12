@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/damlaakcin/Desktop/sandbox/karbil-api/Karbil/WebAPI/WebAPI.csproj": {}
+    "/Users/damlaakcin/Desktop/sandbox/Karbil/WebAPI/WebAPI.csproj": {}
   },
   "projects": {
-    "/Users/damlaakcin/Desktop/sandbox/karbil-api/Karbil/WebAPI/WebAPI.csproj": {
+    "/Users/damlaakcin/Desktop/sandbox/Karbil/WebAPI/WebAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/damlaakcin/Desktop/sandbox/karbil-api/Karbil/WebAPI/WebAPI.csproj",
+        "projectUniqueName": "/Users/damlaakcin/Desktop/sandbox/Karbil/WebAPI/WebAPI.csproj",
         "projectName": "WebAPI",
-        "projectPath": "/Users/damlaakcin/Desktop/sandbox/karbil-api/Karbil/WebAPI/WebAPI.csproj",
+        "projectPath": "/Users/damlaakcin/Desktop/sandbox/Karbil/WebAPI/WebAPI.csproj",
         "packagesPath": "/Users/damlaakcin/.nuget/packages/",
-        "outputPath": "/Users/damlaakcin/Desktop/sandbox/karbil-api/Karbil/WebAPI/obj/",
+        "outputPath": "/Users/damlaakcin/Desktop/sandbox/Karbil/WebAPI/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/damlaakcin/.nuget/NuGet/NuGet.Config"

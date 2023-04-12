@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/damlaakcin/Desktop/sandbox/karbil-api/Karbil/Entities/Entities.csproj": {}
+    "/Users/damlaakcin/Desktop/sandbox/Karbil/Entities/Entities.csproj": {}
   },
   "projects": {
-    "/Users/damlaakcin/Desktop/sandbox/karbil-api/Karbil/Entities/Entities.csproj": {
+    "/Users/damlaakcin/Desktop/sandbox/Karbil/Entities/Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/damlaakcin/Desktop/sandbox/karbil-api/Karbil/Entities/Entities.csproj",
+        "projectUniqueName": "/Users/damlaakcin/Desktop/sandbox/Karbil/Entities/Entities.csproj",
         "projectName": "Entities",
-        "projectPath": "/Users/damlaakcin/Desktop/sandbox/karbil-api/Karbil/Entities/Entities.csproj",
+        "projectPath": "/Users/damlaakcin/Desktop/sandbox/Karbil/Entities/Entities.csproj",
         "packagesPath": "/Users/damlaakcin/.nuget/packages/",
-        "outputPath": "/Users/damlaakcin/Desktop/sandbox/karbil-api/Karbil/Entities/obj/",
+        "outputPath": "/Users/damlaakcin/Desktop/sandbox/Karbil/Entities/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/damlaakcin/.nuget/NuGet/NuGet.Config"

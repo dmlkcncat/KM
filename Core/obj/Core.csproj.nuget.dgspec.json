@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/damlaakcin/Desktop/sandbox/karbil-api/Karbil/Core/Core.csproj": {}
+    "/Users/damlaakcin/Desktop/sandbox/Karbil/Core/Core.csproj": {}
   },
   "projects": {
-    "/Users/damlaakcin/Desktop/sandbox/karbil-api/Karbil/Core/Core.csproj": {
+    "/Users/damlaakcin/Desktop/sandbox/Karbil/Core/Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/damlaakcin/Desktop/sandbox/karbil-api/Karbil/Core/Core.csproj",
+        "projectUniqueName": "/Users/damlaakcin/Desktop/sandbox/Karbil/Core/Core.csproj",
         "projectName": "Core",
-        "projectPath": "/Users/damlaakcin/Desktop/sandbox/karbil-api/Karbil/Core/Core.csproj",
+        "projectPath": "/Users/damlaakcin/Desktop/sandbox/Karbil/Core/Core.csproj",
         "packagesPath": "/Users/damlaakcin/.nuget/packages/",
-        "outputPath": "/Users/damlaakcin/Desktop/sandbox/karbil-api/Karbil/Core/obj/",
+        "outputPath": "/Users/damlaakcin/Desktop/sandbox/Karbil/Core/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/damlaakcin/.nuget/NuGet/NuGet.Config"
