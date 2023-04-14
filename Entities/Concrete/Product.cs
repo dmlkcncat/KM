@@ -1,10 +1,11 @@
 ﻿using System;
+using Core.Entities;
+
 namespace Entities.Concrete
 {
-	public class Product
+	public class Product : IEntity
 	{
-		public Product()
-		{
+		
 			public int Id { get; set;}
 		    public string Name { get; set; }
 		    public string FirstImage { get; set; }
@@ -16,7 +17,7 @@ namespace Entities.Concrete
 		    public string Description { get; set; }
 		    public int CategoryId { get; set; }
 
-          }
+    
     }
 }
 

@@ -1,14 +1,14 @@
 ﻿using System;
+using Core.Entities;
+
 namespace Entities.Concrete
 {
-	public class AboutUs
+	public class AboutUs : IEntity
 	{
-		public AboutUs()
-		{
 
              public int Id { get; set; }
-		     public string AboutUs { get; set; }
-        }
+		     public string Text { get; set; }
+       
 	}
 }
 

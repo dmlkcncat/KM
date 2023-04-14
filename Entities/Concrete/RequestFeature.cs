@@ -1,10 +1,10 @@
 ﻿using System;
+using Core.Entities;
+
 namespace Entities.Concrete
 {
-	public class RequestFeature
+	public class RequestFeature : IEntity
 	{
-		public RequestFeature()
-		{
 
             public int Id { get; set; }
             public string RoomCount { get; set; }
@@ -13,7 +13,7 @@ namespace Entities.Concrete
             public bool Garaj { get; set; }
             public string PlotSquareMeters { get; set; }
             public string HomeSquareMeters { get; set; }
-         }
+        
 	}
 }
 
