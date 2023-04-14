@@ -1,28 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "cKqAtGMtB2LOAaGEzsIAk7LYMzQAI7oTzuT0QOVrzF+iOzfv0I00nLX+cpNGTctDMHRasSxA8BUOd18DaYORPQ==",
+  "dgSpecHash": "KX5QnvY5n4g4vZ0V8/2U1S4sylHMiCwf+yLViXstadc60OoRZuDLewtibScDRvt1X0rJoeR0ikAPDzsoA9LjTA==",
   "success": true,
-  "projectFilePath": "/Users/damlaakcin/Desktop/sandbox/Karbil/Business/Business.csproj",
-  "expectedPackageFiles": [
-    "/Users/damlaakcin/.nuget/packages/microsoft.entityframeworkcore/7.0.5/microsoft.entityframeworkcore.7.0.5.nupkg.sha512",
-    "/Users/damlaakcin/.nuget/packages/microsoft.entityframeworkcore.abstractions/7.0.5/microsoft.entityframeworkcore.abstractions.7.0.5.nupkg.sha512",
-    "/Users/damlaakcin/.nuget/packages/microsoft.entityframeworkcore.analyzers/7.0.5/microsoft.entityframeworkcore.analyzers.7.0.5.nupkg.sha512",
-    "/Users/damlaakcin/.nuget/packages/microsoft.extensions.caching.abstractions/7.0.0/microsoft.extensions.caching.abstractions.7.0.0.nupkg.sha512",
-    "/Users/damlaakcin/.nuget/packages/microsoft.extensions.caching.memory/7.0.0/microsoft.extensions.caching.memory.7.0.0.nupkg.sha512",
-    "/Users/damlaakcin/.nuget/packages/microsoft.extensions.configuration/5.0.0/microsoft.extensions.configuration.5.0.0.nupkg.sha512",
-    "/Users/damlaakcin/.nuget/packages/microsoft.extensions.configuration.abstractions/5.0.0/microsoft.extensions.configuration.abstractions.5.0.0.nupkg.sha512",
-    "/Users/damlaakcin/.nuget/packages/microsoft.extensions.configuration.fileextensions/5.0.0/microsoft.extensions.configuration.fileextensions.5.0.0.nupkg.sha512",
-    "/Users/damlaakcin/.nuget/packages/microsoft.extensions.configuration.json/5.0.0/microsoft.extensions.configuration.json.5.0.0.nupkg.sha512",
-    "/Users/damlaakcin/.nuget/packages/microsoft.extensions.configuration.usersecrets/5.0.0/microsoft.extensions.configuration.usersecrets.5.0.0.nupkg.sha512",
-    "/Users/damlaakcin/.nuget/packages/microsoft.extensions.dependencyinjection/7.0.0/microsoft.extensions.dependencyinjection.7.0.0.nupkg.sha512",
-    "/Users/damlaakcin/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/7.0.0/microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
-    "/Users/damlaakcin/.nuget/packages/microsoft.extensions.fileproviders.abstractions/5.0.0/microsoft.extensions.fileproviders.abstractions.5.0.0.nupkg.sha512",
-    "/Users/damlaakcin/.nuget/packages/microsoft.extensions.fileproviders.physical/5.0.0/microsoft.extensions.fileproviders.physical.5.0.0.nupkg.sha512",
-    "/Users/damlaakcin/.nuget/packages/microsoft.extensions.filesystemglobbing/5.0.0/microsoft.extensions.filesystemglobbing.5.0.0.nupkg.sha512",
-    "/Users/damlaakcin/.nuget/packages/microsoft.extensions.logging/7.0.0/microsoft.extensions.logging.7.0.0.nupkg.sha512",
-    "/Users/damlaakcin/.nuget/packages/microsoft.extensions.logging.abstractions/7.0.0/microsoft.extensions.logging.abstractions.7.0.0.nupkg.sha512",
-    "/Users/damlaakcin/.nuget/packages/microsoft.extensions.options/7.0.0/microsoft.extensions.options.7.0.0.nupkg.sha512",
-    "/Users/damlaakcin/.nuget/packages/microsoft.extensions.primitives/7.0.0/microsoft.extensions.primitives.7.0.0.nupkg.sha512"
-  ],
+  "projectFilePath": "C:\\Users\\DAMLA\\Desktop\\Karbil\\karbil-api\\Business\\Business.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }
