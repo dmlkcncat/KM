@@ -11,18 +11,18 @@ namespace WebAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class UsersController : ControllerBase
+    public class ProductsController : ControllerBase
     {
-        IUserService _userService;
-        public UsersController(IUserService userService)
+        IProductService _productService;
+        public ProductsController(IProductService productService)
         {
-            _userService = userService;
+            _productService = productService;
         }
 
         [HttpGet("getall")]
         public IActionResult GetAll()
         {
-            var result = _userService.GetAll();
+            var result = _productService.GetAll();
             if (result.Success)
             {
                 return Ok(result);
@@ -31,9 +31,9 @@ namespace WebAPI.Controllers
         }
 
         [HttpPost("add")]
-        public IActionResult Add(User user)
+        public IActionResult Add(Product product)
         {
-            var result = _userService.Add(user);
+            var result = _productService.Add(product);
             if (result.Success)
             {
                 return Ok(result);
@@ -42,9 +42,9 @@ namespace WebAPI.Controllers
         }
 
         [HttpPost("delete")]
-        public IActionResult Delete(User user)
+        public IActionResult Delete(Product product)
         {
-            var result = _userService.Delete(user);
+            var result = _productService.Delete(product);
             if (result.Success)
             {
                 return Ok(result);
@@ -53,9 +53,9 @@ namespace WebAPI.Controllers
         }
 
         [HttpPost("update")]
-        public IActionResult Update(User user)
+        public IActionResult Update(Product product)
         {
-            var result = _userService.Update(user);
+            var result = _productService.Update(product);
             if (result.Success)
             {
                 return Ok(result);

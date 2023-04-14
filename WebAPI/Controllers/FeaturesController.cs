@@ -11,18 +11,18 @@ namespace WebAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class UsersController : ControllerBase
+    public class FeaturesController : ControllerBase
     {
-        IUserService _userService;
-        public UsersController(IUserService userService)
+        IFeaturesService _featuresService;
+        public FeaturesController(IFeaturesService featuresService)
         {
-            _userService = userService;
+            _featuresService = featuresService;
         }
 
         [HttpGet("getall")]
         public IActionResult GetAll()
         {
-            var result = _userService.GetAll();
+            var result = _featuresService.GetAll();
             if (result.Success)
             {
                 return Ok(result);
@@ -31,9 +31,9 @@ namespace WebAPI.Controllers
         }
 
         [HttpPost("add")]
-        public IActionResult Add(User user)
+        public IActionResult Add(Features features)
         {
-            var result = _userService.Add(user);
+            var result = _featuresService.Add(features);
             if (result.Success)
             {
                 return Ok(result);
@@ -42,9 +42,9 @@ namespace WebAPI.Controllers
         }
 
         [HttpPost("delete")]
-        public IActionResult Delete(User user)
+        public IActionResult Delete(Features features)
         {
-            var result = _userService.Delete(user);
+            var result = _featuresService.Delete(features);
             if (result.Success)
             {
                 return Ok(result);
@@ -53,9 +53,9 @@ namespace WebAPI.Controllers
         }
 
         [HttpPost("update")]
-        public IActionResult Update(User user)
+        public IActionResult Update(Features features)
         {
-            var result = _userService.Update(user);
+            var result = _featuresService.Update(features);
             if (result.Success)
             {
                 return Ok(result);

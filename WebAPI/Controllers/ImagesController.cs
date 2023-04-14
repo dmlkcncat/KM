@@ -11,18 +11,19 @@ namespace WebAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class UsersController : ControllerBase
+    public class ImagesController : ControllerBase
     {
-        IUserService _userService;
-        public UsersController(IUserService userService)
+
+        IImageService _imageService;
+        public ImagesController(IImageService imageService)
         {
-            _userService = userService;
+            _imageService = imageService;
         }
 
         [HttpGet("getall")]
         public IActionResult GetAll()
         {
-            var result = _userService.GetAll();
+            var result = _imageService.GetAll();
             if (result.Success)
             {
                 return Ok(result);
@@ -31,9 +32,9 @@ namespace WebAPI.Controllers
         }
 
         [HttpPost("add")]
-        public IActionResult Add(User user)
+        public IActionResult Add(Image image)
         {
-            var result = _userService.Add(user);
+            var result = _imageService.Add(image);
             if (result.Success)
             {
                 return Ok(result);
@@ -42,9 +43,9 @@ namespace WebAPI.Controllers
         }
 
         [HttpPost("delete")]
-        public IActionResult Delete(User user)
+        public IActionResult Delete(Image image)
         {
-            var result = _userService.Delete(user);
+            var result = _imageService.Delete(image);
             if (result.Success)
             {
                 return Ok(result);
@@ -53,9 +54,9 @@ namespace WebAPI.Controllers
         }
 
         [HttpPost("update")]
-        public IActionResult Update(User user)
+        public IActionResult Update(Image image)
         {
-            var result = _userService.Update(user);
+            var result = _imageService.Update(image);
             if (result.Success)
             {
                 return Ok(result);

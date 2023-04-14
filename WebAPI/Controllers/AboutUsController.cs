@@ -11,18 +11,19 @@ namespace WebAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class UsersController : ControllerBase
+    public class AboutUsController : ControllerBase
     {
-        IUserService _userService;
-        public UsersController(IUserService userService)
+
+        IAboutUsService _aboutUsService;
+        public AboutUsController(IAboutUsService aboutUsService)
         {
-            _userService = userService;
+            _aboutUsService = aboutUsService;
         }
 
         [HttpGet("getall")]
         public IActionResult GetAll()
         {
-            var result = _userService.GetAll();
+            var result = _aboutUsService.GetAll();
             if (result.Success)
             {
                 return Ok(result);
@@ -31,9 +32,9 @@ namespace WebAPI.Controllers
         }
 
         [HttpPost("add")]
-        public IActionResult Add(User user)
+        public IActionResult Add(AboutUs aboutUs)
         {
-            var result = _userService.Add(user);
+            var result = _aboutUsService.Add(aboutUs);
             if (result.Success)
             {
                 return Ok(result);
@@ -42,9 +43,9 @@ namespace WebAPI.Controllers
         }
 
         [HttpPost("delete")]
-        public IActionResult Delete(User user)
+        public IActionResult Delete(AboutUs aboutUs)
         {
-            var result = _userService.Delete(user);
+            var result = _aboutUsService.Delete(aboutUs);
             if (result.Success)
             {
                 return Ok(result);
@@ -53,9 +54,9 @@ namespace WebAPI.Controllers
         }
 
         [HttpPost("update")]
-        public IActionResult Update(User user)
+        public IActionResult Update(AboutUs aboutUs)
         {
-            var result = _userService.Update(user);
+            var result = _aboutUsService.Update(aboutUs);
             if (result.Success)
             {
                 return Ok(result);
