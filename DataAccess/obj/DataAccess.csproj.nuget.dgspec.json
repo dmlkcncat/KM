@@ -1,23 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\DAMLA\\Desktop\\Karbil\\karbil-api\\DataAccess\\DataAccess.csproj": {}
+    "C:\\Users\\esra-\\Source\\Repos\\karbil-api\\DataAccess\\DataAccess.csproj": {}
   },
   "projects": {
-    "C:\\Users\\DAMLA\\Desktop\\Karbil\\karbil-api\\Core\\Core.csproj": {
+    "C:\\Users\\esra-\\Source\\Repos\\karbil-api\\Core\\Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\DAMLA\\Desktop\\Karbil\\karbil-api\\Core\\Core.csproj",
+        "projectUniqueName": "C:\\Users\\esra-\\Source\\Repos\\karbil-api\\Core\\Core.csproj",
         "projectName": "Core",
-        "projectPath": "C:\\Users\\DAMLA\\Desktop\\Karbil\\karbil-api\\Core\\Core.csproj",
-        "packagesPath": "C:\\Users\\DAMLA\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\DAMLA\\Desktop\\Karbil\\karbil-api\\Core\\obj\\",
+        "projectPath": "C:\\Users\\esra-\\Source\\Repos\\karbil-api\\Core\\Core.csproj",
+        "packagesPath": "C:\\Users\\esra-\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\esra-\\Source\\Repos\\karbil-api\\Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\DAMLA\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\esra-\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -42,34 +44,48 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.5, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\DAMLA\\Desktop\\Karbil\\karbil-api\\DataAccess\\DataAccess.csproj": {
+    "C:\\Users\\esra-\\Source\\Repos\\karbil-api\\DataAccess\\DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\DAMLA\\Desktop\\Karbil\\karbil-api\\DataAccess\\DataAccess.csproj",
+        "projectUniqueName": "C:\\Users\\esra-\\Source\\Repos\\karbil-api\\DataAccess\\DataAccess.csproj",
         "projectName": "DataAccess",
-        "projectPath": "C:\\Users\\DAMLA\\Desktop\\Karbil\\karbil-api\\DataAccess\\DataAccess.csproj",
-        "packagesPath": "C:\\Users\\DAMLA\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\DAMLA\\Desktop\\Karbil\\karbil-api\\DataAccess\\obj\\",
+        "projectPath": "C:\\Users\\esra-\\Source\\Repos\\karbil-api\\DataAccess\\DataAccess.csproj",
+        "packagesPath": "C:\\Users\\esra-\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\esra-\\Source\\Repos\\karbil-api\\DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\DAMLA\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\esra-\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -83,11 +99,11 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\DAMLA\\Desktop\\Karbil\\karbil-api\\Core\\Core.csproj": {
-                "projectPath": "C:\\Users\\DAMLA\\Desktop\\Karbil\\karbil-api\\Core\\Core.csproj"
+              "C:\\Users\\esra-\\Source\\Repos\\karbil-api\\Core\\Core.csproj": {
+                "projectPath": "C:\\Users\\esra-\\Source\\Repos\\karbil-api\\Core\\Core.csproj"
               },
-              "C:\\Users\\DAMLA\\Desktop\\Karbil\\karbil-api\\Entities\\Entities.csproj": {
-                "projectPath": "C:\\Users\\DAMLA\\Desktop\\Karbil\\karbil-api\\Entities\\Entities.csproj"
+              "C:\\Users\\esra-\\Source\\Repos\\karbil-api\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Users\\esra-\\Source\\Repos\\karbil-api\\Entities\\Entities.csproj"
               }
             }
           }
@@ -107,28 +123,36 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\DAMLA\\Desktop\\Karbil\\karbil-api\\Entities\\Entities.csproj": {
+    "C:\\Users\\esra-\\Source\\Repos\\karbil-api\\Entities\\Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\DAMLA\\Desktop\\Karbil\\karbil-api\\Entities\\Entities.csproj",
+        "projectUniqueName": "C:\\Users\\esra-\\Source\\Repos\\karbil-api\\Entities\\Entities.csproj",
         "projectName": "Entities",
-        "projectPath": "C:\\Users\\DAMLA\\Desktop\\Karbil\\karbil-api\\Entities\\Entities.csproj",
-        "packagesPath": "C:\\Users\\DAMLA\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\DAMLA\\Desktop\\Karbil\\karbil-api\\Entities\\obj\\",
+        "projectPath": "C:\\Users\\esra-\\Source\\Repos\\karbil-api\\Entities\\Entities.csproj",
+        "packagesPath": "C:\\Users\\esra-\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\esra-\\Source\\Repos\\karbil-api\\Entities\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\DAMLA\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\esra-\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -142,8 +166,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\DAMLA\\Desktop\\Karbil\\karbil-api\\Core\\Core.csproj": {
-                "projectPath": "C:\\Users\\DAMLA\\Desktop\\Karbil\\karbil-api\\Core\\Core.csproj"
+              "C:\\Users\\esra-\\Source\\Repos\\karbil-api\\Core\\Core.csproj": {
+                "projectPath": "C:\\Users\\esra-\\Source\\Repos\\karbil-api\\Core\\Core.csproj"
               }
             }
           }
@@ -157,17 +181,29 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.Extensions.Configuration.UserSecrets": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }

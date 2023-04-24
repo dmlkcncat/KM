@@ -1351,41 +1351,50 @@
     ]
   },
   "packageFolders": {
-    "/Users/damlaakcin/.nuget/packages/": {}
+    "C:\\Users\\esra-\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/damlaakcin/Desktop/sandbox/Karbil/WebAPI/WebAPI.csproj",
+      "projectUniqueName": "C:\\Users\\esra-\\Source\\Repos\\karbil-api\\WebAPI\\WebAPI.csproj",
       "projectName": "WebAPI",
-      "projectPath": "/Users/damlaakcin/Desktop/sandbox/Karbil/WebAPI/WebAPI.csproj",
-      "packagesPath": "/Users/damlaakcin/.nuget/packages/",
-      "outputPath": "/Users/damlaakcin/Desktop/sandbox/Karbil/WebAPI/obj/",
+      "projectPath": "C:\\Users\\esra-\\Source\\Repos\\karbil-api\\WebAPI\\WebAPI.csproj",
+      "packagesPath": "C:\\Users\\esra-\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\esra-\\Source\\Repos\\karbil-api\\WebAPI\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "/Users/damlaakcin/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\esra-\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "/Users/damlaakcin/Desktop/sandbox/Karbil/Business/Business.csproj": {
-              "projectPath": "/Users/damlaakcin/Desktop/sandbox/Karbil/Business/Business.csproj"
+            "C:\\Users\\esra-\\Source\\Repos\\karbil-api\\Business\\Business.csproj": {
+              "projectPath": "C:\\Users\\esra-\\Source\\Repos\\karbil-api\\Business\\Business.csproj"
             },
-            "/Users/damlaakcin/Desktop/sandbox/Karbil/Core/Core.csproj": {
-              "projectPath": "/Users/damlaakcin/Desktop/sandbox/Karbil/Core/Core.csproj"
+            "C:\\Users\\esra-\\Source\\Repos\\karbil-api\\Core\\Core.csproj": {
+              "projectPath": "C:\\Users\\esra-\\Source\\Repos\\karbil-api\\Core\\Core.csproj"
             },
-            "/Users/damlaakcin/Desktop/sandbox/Karbil/DataAccess/DataAccess.csproj": {
-              "projectPath": "/Users/damlaakcin/Desktop/sandbox/Karbil/DataAccess/DataAccess.csproj"
+            "C:\\Users\\esra-\\Source\\Repos\\karbil-api\\DataAccess\\DataAccess.csproj": {
+              "projectPath": "C:\\Users\\esra-\\Source\\Repos\\karbil-api\\DataAccess\\DataAccess.csproj"
             },
-            "/Users/damlaakcin/Desktop/sandbox/Karbil/Entities/Entities.csproj": {
-              "projectPath": "/Users/damlaakcin/Desktop/sandbox/Karbil/Entities/Entities.csproj"
+            "C:\\Users\\esra-\\Source\\Repos\\karbil-api\\Entities\\Entities.csproj": {
+              "projectPath": "C:\\Users\\esra-\\Source\\Repos\\karbil-api\\Entities\\Entities.csproj"
             }
           }
         }
@@ -1428,7 +1437,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.202/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
       }
     }
   }

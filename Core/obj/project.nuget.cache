@@ -1,8 +1,20 @@
 {
   "version": 2,
-  "dgSpecHash": "bBIIjYJHKttkVqvf1T7Ca8W659ozxloBbuxzStRTYbvTERx66M4gJaIJizVFa9zRABxVYH7UuaSVMMhoi1kCqQ==",
+  "dgSpecHash": "cC8dEbPiZGfSwIp2p7KZESIau2CwdUxwPCQGLnlLBLGnDzv/1Vcno4If9v6PCHs2aYrakYz1ZwZ7QDhcYlnE6A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\DAMLA\\Desktop\\Karbil\\karbil-api\\Core\\Core.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\esra-\\Source\\Repos\\karbil-api\\Core\\Core.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\esra-\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.5\\microsoft.entityframeworkcore.7.0.5.nupkg.sha512",
+    "C:\\Users\\esra-\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.5\\microsoft.entityframeworkcore.abstractions.7.0.5.nupkg.sha512",
+    "C:\\Users\\esra-\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\7.0.5\\microsoft.entityframeworkcore.analyzers.7.0.5.nupkg.sha512",
+    "C:\\Users\\esra-\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\7.0.0\\microsoft.extensions.caching.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\esra-\\.nuget\\packages\\microsoft.extensions.caching.memory\\7.0.0\\microsoft.extensions.caching.memory.7.0.0.nupkg.sha512",
+    "C:\\Users\\esra-\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\7.0.0\\microsoft.extensions.dependencyinjection.7.0.0.nupkg.sha512",
+    "C:\\Users\\esra-\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\esra-\\.nuget\\packages\\microsoft.extensions.logging\\7.0.0\\microsoft.extensions.logging.7.0.0.nupkg.sha512",
+    "C:\\Users\\esra-\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\7.0.0\\microsoft.extensions.logging.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\esra-\\.nuget\\packages\\microsoft.extensions.options\\7.0.0\\microsoft.extensions.options.7.0.0.nupkg.sha512",
+    "C:\\Users\\esra-\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0\\microsoft.extensions.primitives.7.0.0.nupkg.sha512"
+  ],
   "logs": []
 }
