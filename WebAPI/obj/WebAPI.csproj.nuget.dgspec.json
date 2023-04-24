@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\esra-\\Source\\Repos\\karbil-api\\WebAPI\\WebAPI.csproj": {}
+    "C:\\Users\\esra-\\source\\repos\\karbil-api\\WebAPI\\WebAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\esra-\\Source\\Repos\\karbil-api\\Business\\Business.csproj": {
+    "C:\\Users\\esra-\\source\\repos\\karbil-api\\Business\\Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\esra-\\Source\\Repos\\karbil-api\\Business\\Business.csproj",
+        "projectUniqueName": "C:\\Users\\esra-\\source\\repos\\karbil-api\\Business\\Business.csproj",
         "projectName": "Business",
-        "projectPath": "C:\\Users\\esra-\\Source\\Repos\\karbil-api\\Business\\Business.csproj",
+        "projectPath": "C:\\Users\\esra-\\source\\repos\\karbil-api\\Business\\Business.csproj",
         "packagesPath": "C:\\Users\\esra-\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\esra-\\Source\\Repos\\karbil-api\\Business\\obj\\",
         "projectStyle": "PackageReference",
@@ -33,14 +33,14 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\esra-\\Source\\Repos\\karbil-api\\Core\\Core.csproj": {
-                "projectPath": "C:\\Users\\esra-\\Source\\Repos\\karbil-api\\Core\\Core.csproj"
+              "C:\\Users\\esra-\\source\\repos\\karbil-api\\Core\\Core.csproj": {
+                "projectPath": "C:\\Users\\esra-\\source\\repos\\karbil-api\\Core\\Core.csproj"
               },
-              "C:\\Users\\esra-\\Source\\Repos\\karbil-api\\DataAccess\\DataAccess.csproj": {
-                "projectPath": "C:\\Users\\esra-\\Source\\Repos\\karbil-api\\DataAccess\\DataAccess.csproj"
+              "C:\\Users\\esra-\\source\\repos\\karbil-api\\DataAccess\\DataAccess.csproj": {
+                "projectPath": "C:\\Users\\esra-\\source\\repos\\karbil-api\\DataAccess\\DataAccess.csproj"
               },
-              "C:\\Users\\esra-\\Source\\Repos\\karbil-api\\Entities\\Entities.csproj": {
-                "projectPath": "C:\\Users\\esra-\\Source\\Repos\\karbil-api\\Entities\\Entities.csproj"
+              "C:\\Users\\esra-\\source\\repos\\karbil-api\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Users\\esra-\\source\\repos\\karbil-api\\Entities\\Entities.csproj"
               }
             }
           }
@@ -74,12 +74,12 @@
         }
       }
     },
-    "C:\\Users\\esra-\\Source\\Repos\\karbil-api\\Core\\Core.csproj": {
+    "C:\\Users\\esra-\\source\\repos\\karbil-api\\Core\\Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\esra-\\Source\\Repos\\karbil-api\\Core\\Core.csproj",
+        "projectUniqueName": "C:\\Users\\esra-\\source\\repos\\karbil-api\\Core\\Core.csproj",
         "projectName": "Core",
-        "projectPath": "C:\\Users\\esra-\\Source\\Repos\\karbil-api\\Core\\Core.csproj",
+        "projectPath": "C:\\Users\\esra-\\source\\repos\\karbil-api\\Core\\Core.csproj",
         "packagesPath": "C:\\Users\\esra-\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\esra-\\Source\\Repos\\karbil-api\\Core\\obj\\",
         "projectStyle": "PackageReference",
@@ -140,12 +140,12 @@
         }
       }
     },
-    "C:\\Users\\esra-\\Source\\Repos\\karbil-api\\DataAccess\\DataAccess.csproj": {
+    "C:\\Users\\esra-\\source\\repos\\karbil-api\\DataAccess\\DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\esra-\\Source\\Repos\\karbil-api\\DataAccess\\DataAccess.csproj",
+        "projectUniqueName": "C:\\Users\\esra-\\source\\repos\\karbil-api\\DataAccess\\DataAccess.csproj",
         "projectName": "DataAccess",
-        "projectPath": "C:\\Users\\esra-\\Source\\Repos\\karbil-api\\DataAccess\\DataAccess.csproj",
+        "projectPath": "C:\\Users\\esra-\\source\\repos\\karbil-api\\DataAccess\\DataAccess.csproj",
         "packagesPath": "C:\\Users\\esra-\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\esra-\\Source\\Repos\\karbil-api\\DataAccess\\obj\\",
         "projectStyle": "PackageReference",
@@ -169,11 +169,11 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\esra-\\Source\\Repos\\karbil-api\\Core\\Core.csproj": {
-                "projectPath": "C:\\Users\\esra-\\Source\\Repos\\karbil-api\\Core\\Core.csproj"
+              "C:\\Users\\esra-\\source\\repos\\karbil-api\\Core\\Core.csproj": {
+                "projectPath": "C:\\Users\\esra-\\source\\repos\\karbil-api\\Core\\Core.csproj"
               },
-              "C:\\Users\\esra-\\Source\\Repos\\karbil-api\\Entities\\Entities.csproj": {
-                "projectPath": "C:\\Users\\esra-\\Source\\Repos\\karbil-api\\Entities\\Entities.csproj"
+              "C:\\Users\\esra-\\source\\repos\\karbil-api\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Users\\esra-\\source\\repos\\karbil-api\\Entities\\Entities.csproj"
               }
             }
           }
@@ -207,14 +207,14 @@
         }
       }
     },
-    "C:\\Users\\esra-\\Source\\Repos\\karbil-api\\Entities\\Entities.csproj": {
+    "C:\\Users\\esra-\\source\\repos\\karbil-api\\Entities\\Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\esra-\\Source\\Repos\\karbil-api\\Entities\\Entities.csproj",
+        "projectUniqueName": "C:\\Users\\esra-\\source\\repos\\karbil-api\\Entities\\Entities.csproj",
         "projectName": "Entities",
-        "projectPath": "C:\\Users\\esra-\\Source\\Repos\\karbil-api\\Entities\\Entities.csproj",
+        "projectPath": "C:\\Users\\esra-\\source\\repos\\karbil-api\\Entities\\Entities.csproj",
         "packagesPath": "C:\\Users\\esra-\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\esra-\\Source\\Repos\\karbil-api\\Entities\\obj\\",
+        "outputPath": "C:\\Users\\esra-\\source\\repos\\karbil-api\\Entities\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -236,8 +236,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\esra-\\Source\\Repos\\karbil-api\\Core\\Core.csproj": {
-                "projectPath": "C:\\Users\\esra-\\Source\\Repos\\karbil-api\\Core\\Core.csproj"
+              "C:\\Users\\esra-\\source\\repos\\karbil-api\\Core\\Core.csproj": {
+                "projectPath": "C:\\Users\\esra-\\source\\repos\\karbil-api\\Core\\Core.csproj"
               }
             }
           }
@@ -277,14 +277,14 @@
         }
       }
     },
-    "C:\\Users\\esra-\\Source\\Repos\\karbil-api\\WebAPI\\WebAPI.csproj": {
+    "C:\\Users\\esra-\\source\\repos\\karbil-api\\WebAPI\\WebAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\esra-\\Source\\Repos\\karbil-api\\WebAPI\\WebAPI.csproj",
+        "projectUniqueName": "C:\\Users\\esra-\\source\\repos\\karbil-api\\WebAPI\\WebAPI.csproj",
         "projectName": "WebAPI",
-        "projectPath": "C:\\Users\\esra-\\Source\\Repos\\karbil-api\\WebAPI\\WebAPI.csproj",
+        "projectPath": "C:\\Users\\esra-\\source\\repos\\karbil-api\\WebAPI\\WebAPI.csproj",
         "packagesPath": "C:\\Users\\esra-\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\esra-\\Source\\Repos\\karbil-api\\WebAPI\\obj\\",
+        "outputPath": "C:\\Users\\esra-\\source\\repos\\karbil-api\\WebAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -306,17 +306,17 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\esra-\\Source\\Repos\\karbil-api\\Business\\Business.csproj": {
-                "projectPath": "C:\\Users\\esra-\\Source\\Repos\\karbil-api\\Business\\Business.csproj"
+              "C:\\Users\\esra-\\source\\repos\\karbil-api\\Business\\Business.csproj": {
+                "projectPath": "C:\\Users\\esra-\\source\\repos\\karbil-api\\Business\\Business.csproj"
               },
-              "C:\\Users\\esra-\\Source\\Repos\\karbil-api\\Core\\Core.csproj": {
-                "projectPath": "C:\\Users\\esra-\\Source\\Repos\\karbil-api\\Core\\Core.csproj"
+              "C:\\Users\\esra-\\source\\repos\\karbil-api\\Core\\Core.csproj": {
+                "projectPath": "C:\\Users\\esra-\\source\\repos\\karbil-api\\Core\\Core.csproj"
               },
-              "C:\\Users\\esra-\\Source\\Repos\\karbil-api\\DataAccess\\DataAccess.csproj": {
-                "projectPath": "C:\\Users\\esra-\\Source\\Repos\\karbil-api\\DataAccess\\DataAccess.csproj"
+              "C:\\Users\\esra-\\source\\repos\\karbil-api\\DataAccess\\DataAccess.csproj": {
+                "projectPath": "C:\\Users\\esra-\\source\\repos\\karbil-api\\DataAccess\\DataAccess.csproj"
               },
-              "C:\\Users\\esra-\\Source\\Repos\\karbil-api\\Entities\\Entities.csproj": {
-                "projectPath": "C:\\Users\\esra-\\Source\\Repos\\karbil-api\\Entities\\Entities.csproj"
+              "C:\\Users\\esra-\\source\\repos\\karbil-api\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Users\\esra-\\source\\repos\\karbil-api\\Entities\\Entities.csproj"
               }
             }
           }
@@ -331,6 +331,10 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[7.0.5, )"
+            },
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[7.0.4, )"

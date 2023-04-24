@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\esra-\\Source\\Repos\\karbil-api\\Core\\Core.csproj": {}
+    "C:\\Users\\esra-\\source\\repos\\karbil-api\\Core\\Core.csproj": {}
   },
   "projects": {
-    "C:\\Users\\esra-\\Source\\Repos\\karbil-api\\Core\\Core.csproj": {
+    "C:\\Users\\esra-\\source\\repos\\karbil-api\\Core\\Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\esra-\\Source\\Repos\\karbil-api\\Core\\Core.csproj",
+        "projectUniqueName": "C:\\Users\\esra-\\source\\repos\\karbil-api\\Core\\Core.csproj",
         "projectName": "Core",
-        "projectPath": "C:\\Users\\esra-\\Source\\Repos\\karbil-api\\Core\\Core.csproj",
+        "projectPath": "C:\\Users\\esra-\\source\\repos\\karbil-api\\Core\\Core.csproj",
         "packagesPath": "C:\\Users\\esra-\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\esra-\\Source\\Repos\\karbil-api\\Core\\obj\\",
         "projectStyle": "PackageReference",

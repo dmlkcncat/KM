@@ -7,10 +7,7 @@ namespace Entities.Concrete
 	{
 
              public int Id { get; set; }
-
 		     public string Text { get; set; }
-		     public string Text2 { get; set; }
-
     }
 }
 
