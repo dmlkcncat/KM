@@ -1,5 +1,6 @@
 ﻿using Business.Abstract;
 using Entities.Concrete;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -19,6 +20,7 @@ namespace WebAPI.Controllers
             _userService = userService;
         }
 
+        [AllowAnonymous]
         [HttpGet("getall")]
         public IActionResult GetAll()
         {

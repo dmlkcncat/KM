@@ -1,56 +1,100 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Business.Abstract;
 using Business.Concrete;
+using Core.Services;
+using Core.Settings;
 using DataAccess.Abstract;
 using DataAccess.Concrete;
-using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using Microsoft.OpenApi.Models;
+using System.Text;
 
 namespace WebAPI
 {
     public class Startup
     {
-        public Startup(IConfiguration configuration)
+        public IConfigurationRoot Configuration { get; }
+        public Startup(IConfigurationRoot configuration)
         {
             Configuration = configuration;
         }
 
-        public IConfiguration Configuration { get; }
 
+        // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddSingleton<IAboutUsService, AboutUsManager>();
-            services.AddSingleton<IAboutUsDal, AboutUsDal>();
+            services.AddSpaStaticFiles(configuration =>
+            {
+                configuration.RootPath = "wwwroot";
+            });
 
-            services.AddSingleton<ICategoryService, CategoryManager>();
-            services.AddSingleton<ICategoryDal, CategoryDal>();
+            services.AddControllers().AddNewtonsoftJson(x => x.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
 
-            services.AddSingleton<IContactFormService, ContactFormManager>();
-            services.AddSingleton<IContactFormDal, ContactFormDal>();
+            var key = "D2E2fc3TH2HN5K6PbNluKFDJ6RJjSYS9mYsCMSKvnDGcSfnLXSioZB6IdfymCuG5";
+            services.AddAuthentication(x =>
+            {
+                x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                x.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+            }).AddJwtBearer(x =>
+            {
+                x.RequireHttpsMetadata = false;
+                x.SaveToken = true;
+                x.TokenValidationParameters = new TokenValidationParameters
+                {
+                    ValidateIssuerSigningKey = true,
+                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(key)),
+                    ValidateIssuer = false,
+                    ValidateAudience = false
+                };
+            });
 
-            services.AddSingleton<IContactInformationService, ContactInformationManager>();
-            services.AddSingleton<IContactInformationDal, ContactInformationDal>();
+            //services.AddScoped<IJWTAuthenticationManager>(new JWTAuthenticationManager(key));
 
-            services.AddSingleton<IFeaturesService, FeaturesManager>();
-            services.AddSingleton<IFeaturesDal, FeaturesDal>();
 
-            services.AddSingleton<IImageService, ImageManager>();
-            services.AddSingleton<IImageDal, ImageDal>();
+            services.AddScoped<IAboutUsService, AboutUsManager>();
+            services.AddScoped<IAboutUsDal, AboutUsDal>();
 
-            services.AddSingleton<IProductService, ProductManager>();
-            services.AddSingleton<IProductDal, ProductDal>();
+            services.AddScoped<ICategoryService, CategoryManager>();
+            services.AddScoped<ICategoryDal, CategoryDal>();
 
-            services.AddSingleton<IRequestFeatureService, RequestFeatureManager>();
-            services.AddSingleton<IFeaturesDal, FeaturesDal>();
+            services.AddScoped<IContactFormService, ContactFormManager>();
+            services.AddScoped<IContactFormDal, ContactFormDal>();
 
-            services.AddSingleton<IUserService, UserManager>();
-            services.AddSingleton<IUserDal, UserDal>();
+            services.AddScoped<IContactInformationService, ContactInformationManager>();
+            services.AddScoped<IContactInformationDal, ContactInformationDal>();
+
+            services.AddScoped<IFeaturesService, FeaturesManager>();
+            services.AddScoped<IFeaturesDal, FeaturesDal>();
+
+            services.AddScoped<IImageService, ImageManager>();
+            services.AddScoped<IImageDal, ImageDal>();
+
+            services.AddScoped<IProductService, ProductManager>();
+            services.AddScoped<IProductDal, ProductDal>();
+
+            services.AddScoped<IRequestFeatureService, RequestFeatureManager>();
+            services.AddScoped<IRequestFeatureDal, RequestFeatureDal>();
+
+            services.AddScoped<IUserService, UserManager>();
+            services.AddScoped<IUserDal, UserDal>();
+
+            services.Configure<MailSettings>(Configuration.GetSection("MailSettings"));
+            services.AddScoped<IMailService, MailService>();
+
+            services.AddCors(opt => opt.AddDefaultPolicy(
+                builder => builder.AllowAnyOrigin()
+            ));
+
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "WebAPI", Version = "v1" });
+            });
+
 
         }
 
-            public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             if (env.IsDevelopment())
             {
@@ -59,9 +103,13 @@ namespace WebAPI
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "WebAPP v1"));
             }
 
+            app.UseDefaultFiles();
+            app.UseSpaStaticFiles();
+
             app.UseHttpsRedirection();
 
             app.UseRouting();
+
             app.UseCors(x => x
                     .AllowAnyHeader()
                     .AllowAnyMethod()
@@ -69,13 +117,16 @@ namespace WebAPI
                     .AllowAnyOrigin()
             );
 
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapControllers();
+                //endpoints.MapControllers();
+                endpoints.MapDefaultControllerRoute();
             });
+
+            app.UseSpa(spa => { });
         }
     }
 }
-

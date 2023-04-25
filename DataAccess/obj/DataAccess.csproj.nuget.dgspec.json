@@ -11,7 +11,7 @@
         "projectName": "Core",
         "projectPath": "C:\\Users\\esra-\\source\\repos\\karbil-api\\Core\\Core.csproj",
         "packagesPath": "C:\\Users\\esra-\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\esra-\\Source\\Repos\\karbil-api\\Core\\obj\\",
+        "outputPath": "C:\\Users\\esra-\\source\\repos\\karbil-api\\Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -45,9 +45,29 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
-            "Microsoft.EntityFrameworkCore": {
+            "MailKit": {
               "target": "Package",
-              "version": "[7.0.5, )"
+              "version": "[4.0.0, )"
+            },
+            "Microsoft.AspNetCore.Http.Features": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "Microsoft.Bcl.AsyncInterfaces": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "MimeKit": {
+              "target": "Package",
+              "version": "[4.0.0, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "SendGrid": {
+              "target": "Package",
+              "version": "[9.28.1, )"
             }
           },
           "imports": [
@@ -77,7 +97,7 @@
         "projectName": "DataAccess",
         "projectPath": "C:\\Users\\esra-\\source\\repos\\karbil-api\\DataAccess\\DataAccess.csproj",
         "packagesPath": "C:\\Users\\esra-\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\esra-\\Source\\Repos\\karbil-api\\DataAccess\\obj\\",
+        "outputPath": "C:\\Users\\esra-\\source\\repos\\karbil-api\\DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -117,6 +137,34 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Http.Features": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "Microsoft.Bcl.AsyncInterfaces": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.5, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Z.EntityFramework.Extensions.EFCore": {
+              "target": "Package",
+              "version": "[7.21.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
