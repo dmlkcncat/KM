@@ -1243,11 +1243,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\esra-\\source\\repos\\karbil-api\\Core\\Core.csproj",
+      "projectUniqueName": "C:\\Users\\esra-\\Desktop\\Kobizon\\KarbilProject\\karbil-api\\Core\\Core.csproj",
       "projectName": "Core",
-      "projectPath": "C:\\Users\\esra-\\source\\repos\\karbil-api\\Core\\Core.csproj",
+      "projectPath": "C:\\Users\\esra-\\Desktop\\Kobizon\\KarbilProject\\karbil-api\\Core\\Core.csproj",
       "packagesPath": "C:\\Users\\esra-\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\esra-\\source\\repos\\karbil-api\\Core\\obj\\",
+      "outputPath": "C:\\Users\\esra-\\Desktop\\Kobizon\\KarbilProject\\karbil-api\\Core\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -1263,6 +1263,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

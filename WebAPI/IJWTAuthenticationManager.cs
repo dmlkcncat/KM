@@ -4,6 +4,6 @@ namespace WebAPI
 {
     public interface IJWTAuthenticationManager
     {
-       string Authenticate(string mail);
+       string Authenticate(string eposta);
     }
 }

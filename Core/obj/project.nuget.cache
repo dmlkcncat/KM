@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "PpsVwO5kWwMKOZRT6oyse1qo4QJhN3AFrTnU5XThpSdZn4tkFLHwcfYWvabBOa9sPbBRUD/g831jKt6zKHGxxw==",
+  "dgSpecHash": "tkvptXKnCnh9rPJ8KrT4JuI/p9DyJdD2LwLGgc5GApUY9UY1VwEyRqlW0qBZS3hQzh43z7602+FzIZDQW+Ppiw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\esra-\\source\\repos\\karbil-api\\Core\\Core.csproj",
+  "projectFilePath": "C:\\Users\\esra-\\Desktop\\Kobizon\\KarbilProject\\karbil-api\\Core\\Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\esra-\\.nuget\\packages\\bouncycastle.cryptography\\2.1.1\\bouncycastle.cryptography.2.1.1.nupkg.sha512",
     "C:\\Users\\esra-\\.nuget\\packages\\mailkit\\4.0.0\\mailkit.4.0.0.nupkg.sha512",

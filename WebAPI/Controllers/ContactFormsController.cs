@@ -1,5 +1,6 @@
 ﻿using Business.Abstract;
 using Entities.Concrete;
+using Entities.DTOs;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -31,9 +32,9 @@ namespace WebAPI.Controllers
         }
 
         [HttpPost("add")]
-        public IActionResult Add(ContactForm contactForm)
+        public async Task<IActionResult> AddAsync([FromForm] ContactFormDto dto)
         {
-            var result = _contactFormService.Add(contactForm);
+            var result = _contactFormService.Add(dto.contactForm);
             if (result.Success)
             {
                 return Ok(result);

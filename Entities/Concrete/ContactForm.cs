@@ -11,7 +11,9 @@ namespace Entities.Concrete
 		     public string Telephone { get; set; }
 		     public string Mail { get; set; }
 		     public string Description { get; set; }
-		     public int RequestFeature { get; set; }
+		     public int RequestFeatureId { get; set; }
+
+			 public virtual RequestFeature RequestFeature { get; set; }
         
 	}
 }
