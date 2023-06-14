@@ -1,6 +1,7 @@
 ﻿using Business.Abstract;
 using Entities.Concrete;
 using Entities.DTOs;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -10,6 +11,7 @@ using System.Threading.Tasks;
 
 namespace WebAPI.Controllers
 {
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class ContactFormsController : ControllerBase
@@ -31,6 +33,7 @@ namespace WebAPI.Controllers
             return BadRequest(result.Message);
         }
 
+        [AllowAnonymous]
         [HttpPost("add")]
         public async Task<IActionResult> AddAsync([FromForm] ContactFormDto dto)
         {

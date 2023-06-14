@@ -7,14 +7,14 @@ namespace Entities.Concrete
 	{
 		
 			public int Id { get; set;}
-		    public string Name { get; set; }
-		    public string FirstImage { get; set; }
+		    public string? Name { get; set; }
+		    public string? FirstImage { get; set; }
 		//evin tamamlanma tarihi
-		    public DateTime CreatedDate { get; set; }
-		    public string Location { get; set; }
+		    public DateTime? CreatedDate { get; set; }
+		    public string? Location { get; set; }
         //ev gerçekleşti gerçekleşmedi
-            public bool Complete { get; set; }
-		    public string Description { get; set; }
+            public bool? Complete { get; set; }
+		    public string? Description { get; set; }
 		    public int CategoryId { get; set; }
 
 			

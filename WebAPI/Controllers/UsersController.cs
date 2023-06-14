@@ -18,38 +18,39 @@ namespace WebAPI.Controllers
     public class UsersController : ControllerBase
     {
         IUserService _userService;
+        IJWTAuthenticationManager _jwtAuthenticationManager;
         public UsersController(
-            IUserService userService
+            IUserService userService,
+            IJWTAuthenticationManager jWTAuthenticationManager
         )
         {
             _userService = userService;
+            _jwtAuthenticationManager = jWTAuthenticationManager;
         }
 
-        //[AllowAnonymous]
-        //[HttpPost("authenticate")]
-        //public IActionResult Authenticate([FromForm] string mail, [FromForm] string password)
-        //{
-        //    User kullanici = _userService.Get(user => user.Mail == mail).Data;
-
-        //    if (kullanici == null)
-        //        return BadRequest(new ErrorResult(Messages.USER_NOT_FOUND));
-
-        //    if (kullanici.Password != password)
-        //        return BadRequest(new ErrorResult(Messages.USER_WRONG_PASSWORD));
-
-        //    kullanici.Password = null;
-
-        //    var token = _jWTAuthenticationManager.Authenticate(mail);
-
-        //    if (token == null) return Unauthorized();
-
-        //    kullanici.Token = token;
-
-        //    return Ok(kullanici);
-        //}
-
-
         [AllowAnonymous]
+        [HttpPost("authenticate")]
+        public IActionResult Authenticate([FromForm] string email, [FromForm] string password)
+        {
+            User kullanici = _userService.Get(user => user.Email == email).Data;
+
+            if (kullanici == null)
+                return BadRequest(new ErrorResult(Messages.USER_NOT_FOUND));
+
+            if (kullanici.Password != password)
+                return BadRequest(new ErrorResult(Messages.USER_WRONG_PASSWORD));
+
+            kullanici.Password = null;
+
+            var token = _jwtAuthenticationManager.Authenticate(email);
+
+            if (token == null) return Unauthorized();
+
+            kullanici.Token = token;
+
+            return Ok(kullanici);
+        }
+
         [HttpGet("getall")]
         public IActionResult GetAll()
         {

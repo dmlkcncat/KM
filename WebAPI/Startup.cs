@@ -5,6 +5,7 @@ using Core.Settings;
 using DataAccess.Abstract;
 using DataAccess.Concrete;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using System.Text;
@@ -49,6 +50,7 @@ namespace WebAPI
             });
 
             //services.AddScoped<IJWTAuthenticationManager>(new JWTAuthenticationManager(key));
+            services.AddSingleton<IJWTAuthenticationManager>(new JWTAuthenticationManager(key));
 
 
             services.AddScoped<IAboutUsService, AboutUsManager>();
@@ -68,6 +70,12 @@ namespace WebAPI
 
             services.AddScoped<IImageService, ImageManager>();
             services.AddScoped<IImageDal, ImageDal>();
+
+            services.AddScoped<IProcessesService, ProcessesManager>();
+            services.AddScoped<IProcessesDal, ProcessesDal>();
+
+            services.AddScoped<IProcessesImagesService, ProcessesImagesManager>();
+            services.AddScoped<IProcessesImagesDal, ProcessesImagesDal>();
 
             services.AddScoped<IProductService, ProductManager>();
             services.AddScoped<IProductDal, ProductDal>();
