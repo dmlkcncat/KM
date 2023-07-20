@@ -65,6 +65,9 @@ namespace WebAPI
             services.AddScoped<IContactInformationService, ContactInformationManager>();
             services.AddScoped<IContactInformationDal, ContactInformationDal>();
 
+            services.AddScoped<ICountersService, CountersManager>();
+            services.AddScoped<ICountersDal, CountersDal>();
+
             services.AddScoped<IFeaturesService, FeaturesManager>();
             services.AddScoped<IFeaturesDal, FeaturesDal>();
 
@@ -82,6 +85,9 @@ namespace WebAPI
 
             services.AddScoped<IRequestFeatureService, RequestFeatureManager>();
             services.AddScoped<IRequestFeatureDal, RequestFeatureDal>();
+
+            services.AddScoped<ISSSService, SSSManager>();
+            services.AddScoped<ISSSDal, SSSDal>();
 
             services.AddScoped<IUserService, UserManager>();
             services.AddScoped<IUserDal, UserDal>();

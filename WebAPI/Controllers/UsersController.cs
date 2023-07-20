@@ -40,7 +40,9 @@ namespace WebAPI.Controllers
             if (kullanici.Password != password)
                 return BadRequest(new ErrorResult(Messages.USER_WRONG_PASSWORD));
 
+#pragma warning disable CS8625 // Cannot convert null literal to non-nullable reference type.
             kullanici.Password = null;
+#pragma warning restore CS8625 // Cannot convert null literal to non-nullable reference type.
 
             var token = _jwtAuthenticationManager.Authenticate(email);
 

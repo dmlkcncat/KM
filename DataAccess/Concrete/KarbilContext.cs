@@ -17,12 +17,14 @@ namespace DataAccess.Concrete
         public DbSet<Category> Category { get; set; }
         public DbSet<ContactForm> ContactForm { get; set; }
         public DbSet<ContactInformation> ContactInformation { get; set; }
+        public DbSet<Counters> Counters { get; set; }
         public DbSet<Features> Features { get; set; }
         public DbSet<Image> Image { get; set; }
         public DbSet<Processes> Processes { get; set; }
         public DbSet<ProcessesImages> ProcessesImages { get; set; }
         public DbSet<Product> Product { get; set; }
         public DbSet<RequestFeature> RequestFeature { get; set; }
+        public DbSet<SSS> SSS { get; set; }
         public DbSet<User> User { get; set; }
 
     }
