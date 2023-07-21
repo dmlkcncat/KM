@@ -11,10 +11,10 @@ namespace Entities.Concrete
     {
         public int Id { get; set; }
         public string UserName { get; set; }
-        public DateTime CreateDate { get; set; }
+        public DateTime CreatedDate { get; set; }
         public string Title { get; set; }
         public string Comment { get; set; }
-        public Boolean Active { get; set; }
+        public Boolean Active { get; set; } = false;
 
     }
 }

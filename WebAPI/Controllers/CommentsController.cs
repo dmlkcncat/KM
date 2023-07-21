@@ -1,4 +1,5 @@
 ﻿using Business.Abstract;
+using Core;
 using Entities.Concrete;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
@@ -49,6 +50,8 @@ namespace WebAPI.Controllers
         [HttpPost("add")]
         public IActionResult Add(Comments comments)
         {
+            comments.CreatedDate = DateTime.Now;
+
             var result = _commentsService.Add(comments);
             if (result.Success)
             {
