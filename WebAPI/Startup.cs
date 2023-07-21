@@ -59,6 +59,9 @@ namespace WebAPI
             services.AddScoped<ICategoryService, CategoryManager>();
             services.AddScoped<ICategoryDal, CategoryDal>();
 
+            services.AddScoped<ICommentsService, CommentsManager>();
+            services.AddScoped<ICommentsDal, CommentsDal>();
+
             services.AddScoped<IContactFormService, ContactFormManager>();
             services.AddScoped<IContactFormDal, ContactFormDal>();
 
@@ -82,6 +85,9 @@ namespace WebAPI
 
             services.AddScoped<IProductService, ProductManager>();
             services.AddScoped<IProductDal, ProductDal>();
+
+            services.AddScoped<IProjectStepsService, ProjectStepsManager>();
+            services.AddScoped<IProjectStepsDal, ProjectStepsDal>();
 
             services.AddScoped<IRequestFeatureService, RequestFeatureManager>();
             services.AddScoped<IRequestFeatureDal, RequestFeatureDal>();
