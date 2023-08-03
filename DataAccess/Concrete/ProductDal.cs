@@ -31,20 +31,6 @@ namespace DataAccess.Concrete
             return false;
         }
 
-        public List<Product> GetAll(Expression<Func<Product, bool>> filter = null)
-        {
-
-            using (KarbilContext context = new KarbilContext())
-            {
-                var query = context.Product
-                    .Include(item => item.Category).AsQueryable();
-
-                if (filter != null) query = query.Where(filter);
-
-                return query.ToList();
-            }
-        }
-
         public Product GetById(int id)
         {
             using (KarbilContext context = new KarbilContext())

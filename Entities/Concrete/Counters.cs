@@ -12,6 +12,7 @@ namespace Entities.Concrete
         public int Id { get; set; }
         public int Count { get; set; }
         public string? Name { get; set; }
+        public string? HexCode { get; set; }
 
     }
 }

@@ -1,6 +1,7 @@
 ﻿using Business.Abstract;
 using Core.Entities.Concrete;
 using Core.Services;
+using DataAccess.Concrete;
 using DocumentFormat.OpenXml.Spreadsheet;
 using Entities.Concrete;
 using Entities.DTOs;
@@ -24,13 +25,25 @@ namespace WebAPI.Controllers
         {
             _productService = productService;
             _imageService = imageService;
-            
+
         }
 
         [HttpGet("getall")]
-        public IActionResult GetAll()
+        public IActionResult GetAll(
+            string? RoomCount,
+            string? FloorOption,
+            bool? Garaj,
+            string? PlotSquareMeters,
+            string? HomeSquareMeters
+        )
         {
-            var result = _productService.GetAll();
+            var result = _productService.GetAll( x => 
+            (FloorOption != null ? x.FloorOption != null && x.FloorOption == FloorOption! : true) &&
+            (RoomCount != null ? x.RoomCount != null && x.RoomCount == RoomCount! : true) &&
+            (Garaj != null ? x.Garaj != null && x.Garaj == Garaj! : true) &&
+            (PlotSquareMeters != null ? x.PlotSquareMeters != null && x.PlotSquareMeters == PlotSquareMeters! : true) &&
+            (HomeSquareMeters != null ? x.HomeSquareMeters != null && x.HomeSquareMeters == HomeSquareMeters! : true)
+            );
             if (result.Success)
             {
                 return Ok(result);
@@ -39,14 +52,35 @@ namespace WebAPI.Controllers
         }
 
         [HttpPost("add")]
-        public IActionResult Add(Product product)
+        public async Task<IActionResult> AddAsync([FromForm] IFormFile image, [FromForm] Product product)
         {
+            String? path = await FileService.UploadFile(image);
+            product.FirstImage = path;
             var result = _productService.Add(product);
             if (result.Success)
             {
                 return Ok(result);
             }
             return BadRequest(result);
+        }
+
+        public async Task<bool> AddWithImage(Product product, IFormFile image)
+        {
+            try
+            {
+                using (KarbilContext context = new KarbilContext())
+                {
+                    product.FirstImage = await FileService.UploadFile(image);
+                    context.Product.Add(product);
+                    context.SaveChanges();
+                    return true;
+                }
+            }
+            catch (Exception e)
+            {
+                // TODO: LOG
+            }
+            return false;
         }
 
 

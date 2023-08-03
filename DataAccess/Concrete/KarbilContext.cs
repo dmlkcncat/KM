@@ -10,7 +10,9 @@ namespace DataAccess.Concrete
         {
             var serverVersion = new MySqlServerVersion(new Version(8, 0, 28));
 
+            //optionsBuilder.UseMySql(@"Server=localhost; database=karbil; uid=root; pwd=k7RBS7oRTJ2ibryo", serverVersion);
             optionsBuilder.UseMySql(@"Server=localhost; database=karbil; uid=esra; pwd=Esra.1513", serverVersion);
+
         }
 
         public DbSet<AboutUs> AboutUs { get; set; }
@@ -21,6 +23,7 @@ namespace DataAccess.Concrete
         public DbSet<Counters> Counters { get; set; }
         public DbSet<Features> Features { get; set; }
         public DbSet<Image> Image { get; set; }
+        public DbSet<LastProject> LastProject { get; set; }
         public DbSet<Processes> Processes { get; set; }
         public DbSet<ProcessesImages> ProcessesImages { get; set; }
         public DbSet<Product> Product { get; set; }

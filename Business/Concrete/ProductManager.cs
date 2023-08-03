@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq.Expressions;
 using Business.Abstract;
 using Business.Constants;
 using Core.Utilities.Results;
@@ -45,9 +46,9 @@ namespace Business.Concrete
             return new SuccessResult(Messages.Added);
         }
 
-        public IDataResult<List<Product>> GetAll()
+        public IDataResult<List<Product>> GetAll(Expression<Func<Product, bool>>? filter = null)
         {
-            return new SuccessDataResult<List<Product>>(_productDal.GetAll(), Messages.Listed);
+            return new SuccessDataResult<List<Product>>(_productDal.GetAll(filter), Messages.Listed);
         }
 
         public IResult Update(Product product)

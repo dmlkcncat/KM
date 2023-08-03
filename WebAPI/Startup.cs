@@ -20,6 +20,9 @@ namespace WebAPI
             Configuration = configuration;
         }
 
+        public const string adminClientRoot = "client/admin";
+        public const string userClientRoot = "client";
+
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
@@ -28,6 +31,8 @@ namespace WebAPI
             {
                 configuration.RootPath = "wwwroot";
             });
+
+            services.AddSpaStaticFiles();
 
             services.AddControllers().AddNewtonsoftJson(x => x.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
 
@@ -77,6 +82,9 @@ namespace WebAPI
             services.AddScoped<IImageService, ImageManager>();
             services.AddScoped<IImageDal, ImageDal>();
 
+            services.AddScoped<ILastProjectService, LastProjectManager>();
+            services.AddScoped<ILastProjectDal, LastProjectDal>();
+
             services.AddScoped<IProcessesService, ProcessesManager>();
             services.AddScoped<IProcessesDal, ProcessesDal>();
 
@@ -124,7 +132,7 @@ namespace WebAPI
             }
 
             app.UseDefaultFiles();
-            app.UseSpaStaticFiles();
+            //app.UseSpaStaticFiles();
 
             app.UseHttpsRedirection();
 
@@ -146,7 +154,8 @@ namespace WebAPI
                 endpoints.MapDefaultControllerRoute();
             });
 
-            app.UseSpa(spa => { });
+            //app.UseSpa(spa => { });
+            app.UseStaticFiles();
         }
     }
 }

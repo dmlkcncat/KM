@@ -47,4 +47,8 @@
       <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
     </ProjectReference>
   </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\StaticFiles\images\" />
+  </ItemGroup>
 </Project>
