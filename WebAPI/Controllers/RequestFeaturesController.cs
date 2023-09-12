@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 namespace WebAPI.Controllers
 {
     [Route("api/[controller]")]
+    [Consumes("application/json")]
     [ApiController]
     public class RequestFeaturesController : ControllerBase
     {

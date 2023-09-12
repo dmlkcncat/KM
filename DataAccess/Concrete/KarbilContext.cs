@@ -11,7 +11,7 @@ namespace DataAccess.Concrete
             var serverVersion = new MySqlServerVersion(new Version(8, 0, 28));
 
             //optionsBuilder.UseMySql(@"Server=localhost; database=karbil; uid=root; pwd=k7RBS7oRTJ2ibryo", serverVersion);
-            optionsBuilder.UseMySql(@"Server=localhost; database=karbil; uid=esra; pwd=Esra.1513", serverVersion);
+            optionsBuilder.UseMySql(@"Server=localhost; database=karbil; uid=root; pwd=1513", serverVersion);
 
         }
 

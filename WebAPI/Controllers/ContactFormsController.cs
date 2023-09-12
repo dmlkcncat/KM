@@ -13,6 +13,7 @@ namespace WebAPI.Controllers
 {
     [Authorize]
     [Route("api/[controller]")]
+    [Consumes("application/json")]
     [ApiController]
     public class ContactFormsController : ControllerBase
     {

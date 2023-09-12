@@ -9,6 +9,7 @@ using System.Linq.Expressions;
 namespace WebAPI.Controllers
 {
     [Route("api/[controller]")]
+    [Consumes("application/json")]
     [ApiController]
     public class CommentsController : ControllerBase
     {
@@ -33,19 +34,6 @@ namespace WebAPI.Controllers
             }
             return BadRequest(result.Message);
         }
-
-        //[HttpGet("getall")]
-        //public IActionResult GetAll([FromQuery(Name = "active")] bool active = true)
-        //{
-        //    Expression<Func<Comments, bool>> filter = filter = x => x.Active;
-        //    if (!active) filter = null;
-        //    var result = _commentsService.GetAll(filter);
-        //    if (result.Success)
-        //    {
-        //        return Ok(result);
-        //    }
-        //    return BadRequest(result.Message);
-        //}
 
         [HttpPost("add")]
         public IActionResult Add(Comments comments)

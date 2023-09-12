@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace WebAPI.Controllers
 {
     [Route("api/[controller]")]
+    [Consumes("application/json")]
     [ApiController]
     public class ProcessesImagesController : ControllerBase
     {

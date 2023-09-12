@@ -12,6 +12,7 @@ namespace WebAPI.Controllers
 {
     [Authorize]
     [Route("api/[controller]")]
+    [Consumes("application/json")]
     [ApiController]
     public class DashboardsController : ControllerBase
     {
@@ -32,7 +33,7 @@ namespace WebAPI.Controllers
             _userService = userService;
         }
         [AllowAnonymous]
-        [HttpGet("")]
+        [HttpGet("get")]
         public IActionResult Get()
         {
             using (var context = new KarbilContext())
