@@ -30,28 +30,16 @@ namespace WebAPI.Controllers
 
         }
 
-        //[HttpGet("getall")]
-        //public IActionResult GetAll(
-        //    string? RoomCount,
-        //    string? FloorOption,
-        //    bool? Garaj,
-        //    string? PlotSquareMeters,
-        //    string? HomeSquareMeters
-        //)
-        //{
-        //    var result = _productService.GetAll( x => 
-        //    (FloorOption != null ? x.FloorOption != null && x.FloorOption == FloorOption! : true) &&
-        //    (RoomCount != null ? x.RoomCount != null && x.RoomCount == RoomCount! : true) &&
-        //    (Garaj != null ? x.Garaj != null && x.Garaj == Garaj! : true) &&
-        //    (PlotSquareMeters != null ? x.PlotSquareMeters != null && x.PlotSquareMeters == PlotSquareMeters! : true) &&
-        //    (HomeSquareMeters != null ? x.HomeSquareMeters != null && x.HomeSquareMeters == HomeSquareMeters! : true)
-        //    );
-        //    if (result.Success)
-        //    {
-        //        return Ok(result);
-        //    }
-        //    return BadRequest(result.Message);
-        //}
+        [HttpGet("getall")]
+        public IActionResult GetAll()
+        {
+            var result = _productService.GetAll();
+            if (result.Success)
+            {
+                return Ok(result);
+            }
+            return BadRequest(result.Message);
+        }
 
         //[HttpPost("add")]
         //public async Task<IActionResult> AddAsync([FromForm] IFormFile image, [FromForm] Product product)

@@ -94,6 +94,9 @@ namespace WebAPI
             services.AddScoped<IProductService, ProductManager>();
             services.AddScoped<IProductDal, ProductDal>();
 
+            services.AddScoped<IProjectService, ProjectManager>();
+            services.AddScoped<IProjectDal, ProjectDal>();
+
             services.AddScoped<IProjectStepsService, ProjectStepsManager>();
             services.AddScoped<IProjectStepsDal, ProjectStepsDal>();
 
@@ -102,6 +105,9 @@ namespace WebAPI
 
             services.AddScoped<ISSSService, SSSManager>();
             services.AddScoped<ISSSDal, SSSDal>();
+
+            services.AddScoped<INewsService, NewsManager>();
+            services.AddScoped<INewsDal, NewsDal>();
 
             services.AddScoped<IUserService, UserManager>();
             services.AddScoped<IUserDal, UserDal>();

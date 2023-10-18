@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\DAMLA\\Desktop\\KM\\karbil-api\\Core\\Core.csproj": {}
+    "C:\\Users\\DAMLA\\Desktop\\KM\\km-api\\Core\\Core.csproj": {}
   },
   "projects": {
-    "C:\\Users\\DAMLA\\Desktop\\KM\\karbil-api\\Core\\Core.csproj": {
+    "C:\\Users\\DAMLA\\Desktop\\KM\\km-api\\Core\\Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\DAMLA\\Desktop\\KM\\karbil-api\\Core\\Core.csproj",
+        "projectUniqueName": "C:\\Users\\DAMLA\\Desktop\\KM\\km-api\\Core\\Core.csproj",
         "projectName": "Core",
-        "projectPath": "C:\\Users\\DAMLA\\Desktop\\KM\\karbil-api\\Core\\Core.csproj",
+        "projectPath": "C:\\Users\\DAMLA\\Desktop\\KM\\km-api\\Core\\Core.csproj",
         "packagesPath": "C:\\Users\\DAMLA\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\DAMLA\\Desktop\\KM\\karbil-api\\Core\\obj\\",
+        "outputPath": "C:\\Users\\DAMLA\\Desktop\\KM\\km-api\\Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -42,53 +42,17 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "dependencies": {
-            "MailKit": {
-              "target": "Package",
-              "version": "[4.1.0, )"
-            },
-            "Microsoft.AspNetCore.Http.Features": {
-              "target": "Package",
-              "version": "[5.0.17, )"
-            },
-            "Microsoft.Bcl.AsyncInterfaces": {
-              "target": "Package",
-              "version": "[7.0.0, )"
-            },
-            "Microsoft.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[7.0.9, )"
-            },
-            "MimeKit": {
-              "target": "Package",
-              "version": "[4.1.0, )"
-            },
-            "Pomelo.EntityFrameworkCore.MySql": {
-              "target": "Package",
-              "version": "[7.0.0, )"
-            },
-            "SendGrid": {
-              "target": "Package",
-              "version": "[9.28.1, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
         }
       }
     }
