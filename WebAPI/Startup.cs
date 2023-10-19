@@ -61,26 +61,8 @@ namespace WebAPI
             services.AddScoped<IAboutUsService, AboutUsManager>();
             services.AddScoped<IAboutUsDal, AboutUsDal>();
 
-            services.AddScoped<ICategoryService, CategoryManager>();
-            services.AddScoped<ICategoryDal, CategoryDal>();
-
-            services.AddScoped<ICommentsService, CommentsManager>();
-            services.AddScoped<ICommentsDal, CommentsDal>();
-
-            services.AddScoped<IContactFormService, ContactFormManager>();
-            services.AddScoped<IContactFormDal, ContactFormDal>();
-
-            services.AddScoped<IContactInformationService, ContactInformationManager>();
-            services.AddScoped<IContactInformationDal, ContactInformationDal>();
-
             services.AddScoped<ICountersService, CountersManager>();
             services.AddScoped<ICountersDal, CountersDal>();
-
-            services.AddScoped<IFeaturesService, FeaturesManager>();
-            services.AddScoped<IFeaturesDal, FeaturesDal>();
-
-            services.AddScoped<IImageService, ImageManager>();
-            services.AddScoped<IImageDal, ImageDal>();
 
             services.AddScoped<ILastProjectService, LastProjectManager>();
             services.AddScoped<ILastProjectDal, LastProjectDal>();
@@ -91,20 +73,11 @@ namespace WebAPI
             services.AddScoped<IProcessesImagesService, ProcessesImagesManager>();
             services.AddScoped<IProcessesImagesDal, ProcessesImagesDal>();
 
-            services.AddScoped<IProductService, ProductManager>();
-            services.AddScoped<IProductDal, ProductDal>();
-
             services.AddScoped<IProjectService, ProjectManager>();
             services.AddScoped<IProjectDal, ProjectDal>();
 
             services.AddScoped<IProjectStepsService, ProjectStepsManager>();
             services.AddScoped<IProjectStepsDal, ProjectStepsDal>();
-
-            services.AddScoped<IRequestFeatureService, RequestFeatureManager>();
-            services.AddScoped<IRequestFeatureDal, RequestFeatureDal>();
-
-            services.AddScoped<ISSSService, SSSManager>();
-            services.AddScoped<ISSSDal, SSSDal>();
 
             services.AddScoped<INewsService, NewsManager>();
             services.AddScoped<INewsDal, NewsDal>();
